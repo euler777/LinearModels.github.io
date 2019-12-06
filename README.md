@@ -45,6 +45,7 @@ plot(hatvalues(lm.fit))
 which.max(hatvalues(lm.fit))
 
 ```
+![image](https://user-images.githubusercontent.com/58537175/70355914-15b28180-1828-11ea-8c28-8f1dc1b8fd00.png)
 
 ```markdown
 # Multiple Linear Regression
