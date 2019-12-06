@@ -46,6 +46,9 @@ which.max(hatvalues(lm.fit))
 
 ```
 
+
+
+
 ```markdown
 # Multiple Linear Regression
 
