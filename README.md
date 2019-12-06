@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+# Simple Linear Regression
 
-You can use the [editor on GitHub](https://github.com/euler777/LinearModels.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Motivation: Linear regression is a method that summarizes how the average values of a numerical outcome variable vary over subpopulations defined by linear functions of predictors. Introductory statistics and regression textbooks often focus on how regression can be used to represent relationships between variables, rather than a comparison of average outcomes. By focusing on regression as a comparison of averages, we are being explicit about its limitations for defining these relationships causally.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+# Getting Started
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+To begin, we will load our dataset into Python and R and immediately fit linear model to explore whether or not linear relationships exists in our data.
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+Auto = read.csv("../data/Auto.csv", header=T, na.strings="?")
+Auto = na.omit(Auto)
+summary(Auto)
+attach(Auto)
+lm.fit = lm(mpg ~ horsepower)
+summary(lm.fit)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/euler777/LinearModels.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
