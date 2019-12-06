@@ -6,6 +6,7 @@ Motivation: Linear regression is a method that summarizes how the average values
 
 To begin, we will load our dataset into Python and R and immediately fit linear model to explore whether or not linear relationships exists in our data.
 
+# R
 ```markdown
 Auto = read.csv("../data/Auto.csv", header=T, na.strings="?")
 Auto = na.omit(Auto)
